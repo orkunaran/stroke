@@ -35,4 +35,8 @@ I followed a general approach on the dataset;
 
 In addition to these, I also tried Future Selection and tried to implement the model with selected features. However, feature selection didn't changed the model accuracy significantly.
 
+## Update v2.0
+
+Recently I learned that resampling is not a good idea in terms of preseving data integrity, that it might change the variance in the data. Then I started to look for option to deal with CI, found books - medium articles and kaggle notebooks. In this notebook I tried class weights in sklearn and scale_pos_weight in xgboost classifiers. Also, I calculated tpr, fpr and gmeans scores to determine prediction probability treshholds. Last, I created an APP with streamlit to deploy the model. 
+
 
